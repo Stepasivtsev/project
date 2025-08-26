@@ -8,6 +8,15 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes/TTLakes-Bold.eot');
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+         url('TTLakes/TTLakes-Bold.woff') format('woff'),
+         url('TTLakes/TTLakes-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
 
 
 body {
@@ -78,10 +87,14 @@ button {
 .main__title {
     margin-left: 16px;
     font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.6px;
 }
+
 
 .main__button {
     font-size: 16px;
+    letter-spacing: -0.2px;
 }
 
 .main__services {
@@ -103,6 +116,8 @@ button {
 
 .main__text {
     margin-left: 16px;
+    letter-spacing: 0.2px;
+    font-size: 14px;
 }
 
 .main-read {
