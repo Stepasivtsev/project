@@ -1,0 +1,30 @@
+{
+    "name": "Kata Maket",
+    "image": "mcr.microsoft.com/devcontainers/python:3.12",
+    "customizations": {
+      "extensions": [
+        "bierner.lit-html",
+        "GitHub.copilot"
+      ],
+      "vscode": {
+        "settings": {
+          "editor.rulers": [
+            100
+          ],
+          "editor.codeActionsOnSave": {
+            "source.fixAll": "always",
+            "source.organizeImports": "always"
+          },
+          "files.trimTrailingWhitespace": true
+        },
+        "extensions": [
+          "GitHub.copilot",
+        ]
+      }
+    },
+    "remoteUser": "vscode",
+    "features": {
+      "ghcr.io/anthropics/devcontainer-features/claude-code:1.0": {},
+      "ghcr.io/devcontainers/features/node:1": {}
+    }
+  }
