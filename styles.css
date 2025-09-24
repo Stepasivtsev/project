@@ -17,7 +17,7 @@
     font-weight: bold;
     font-style: normal;
 }
-
+  
 
 body {
 margin: 0;
@@ -37,11 +37,18 @@ font-family: 'TT Lakes', sans-serif;
     padding-bottom: 0;
 }
 
-.header__burger img {
+.header__burger {
     width: 40px;
-    height: auto;
-}
+    height: 40px;
+    border-radius: 50%;                
+    background-color: #FF3E79;          
+    background-image: url("Images/icon.svg"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px 16px;         
+  }
 
+ 
 .header__icon img {
     width: 40px;
     height: auto;
@@ -90,11 +97,16 @@ button {
 .main__content {
     display: flex;
     align-items: center;
+     
 }
 
 .main__highlight {
-    width: 4px;
+    width: 24px;
     height: 40px;
+    background-color:#41F6D7;    
+    transform: rotate(-180deg);
+    border-radius: 6px;
+    margin-left: -20px; 
 }
 
 .main__title {
@@ -104,11 +116,17 @@ button {
     letter-spacing: -0.6px;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+}
+
 .main__services {
     display: flex;
     align-items: center;
     margin-left: 0;
     position: relative;
+    list-style: none; 
 }
 
 .main__button {
@@ -116,10 +134,10 @@ button {
     letter-spacing: -0.2px;
     margin-right: 16px; 
     padding: 8px 16px; 
-    height: 40px;
     border-radius: 6px;
     white-space: nowrap;
     color: #7E7E82; 
+    box-sizing: border-box;
 }
 
 
@@ -203,17 +221,18 @@ button {
     margin-left: auto; 
 }
 
+
+  
+  
+
 @media (min-width: 768px) {
     
     .header__inner {
-        padding: 0; 
+        padding: 18px; 
         justify-content: flex-start;
     }
 
-    .header__burger {
-        padding: 24px 24px;
-        padding-right: 0;
-    }
+
 
 
     .header__icon--call,
@@ -362,5 +381,7 @@ button {
         height: 40px;
         padding-right: 20px;
     }
+
+    
 }
 
