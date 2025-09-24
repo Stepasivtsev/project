@@ -10,9 +10,7 @@
 <body>
     <header class="header">
         <div class="header__inner">
-            <button class="header__burger">
-                <img src="Images/burger.png" alt="Меню">
-            </button>
+            <button class="header__burger"></button>
             <img class="header__divider header__divider--desktop" src="Images/divider.png" alt="Разделитель">
             <a href="#" class="header__logo">
                 <img class="header__logo-image" src="Images/Group.png" alt="Логотип">
@@ -40,7 +38,7 @@
     </header>
     <main class="main"> 
         <section class="main__content">
-             <img class="main__highlight" src="Images/highlight.png" alt="Выделитель">
+            <span class="main__highlight"></span>
              <h1  class="main__title">Услуги и сервисы</h1>
              <div class="main__actions">
                 <button type="button" class="action-btn">
@@ -58,35 +56,37 @@
                 </button>
               </div>
         </section>
-        <section class="main__services">
-            <button class="main__button main__button--brands">Ремонтируемые бренды</button>
-            <button class="main__button main__button--active">Ремонтируемые устройства</button>
-            <button class="main__button main__button--services">Дополнительные услуги</button>
-            <button class="main__button main__button--price">Цены и услуги</button>
-            <button class="main__button main__button--address">Адреса сервисных центров</button>
-            <button class="main__button main__button--sale">Специальные цены</button>
-            <button class="main__button main__button--review">Отзывы</button>
-        </section> 
-        <section class="services__row">
+        <nav>
+            <ul class="main__services">
+                <li class="main__button main__button--brands">Ремонтируемые бренды</li>
+                <li class="main__button main__button--active">Ремонтируемые устройства</li>
+                <li class="main__button main__button--services">Дополнительные услуги</li>
+                <li class="main__button main__button--price">Цены и услуги</li>
+                <li class="main__button main__button--address">Адреса сервисных центров</li>
+                <li class="main__button main__button--sale">Специальные цены</li>
+                <li class="main__button main__button--review">Отзывы</li>
+                </ul>
+        </nav> 
+        <article class="services__row">
             <div class="services__left">
-              <section class="main__description">
+              <div class="main__description">
                   <p class="main__text">
                       Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
                       Только у нас вы сможете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
                   </p>
                   <p class="main__text main__text--tablet">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="main__text main__text--desktop">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
-              </section>
+                </div>
           
-              <section class="main__read">
+              <div class="main__read">
                   <img class="main__icon" src="Images/icon.png" alt="icon">
                   <button class="main__read-more">Читать далее</button>
-              </section>
+              </div>
             </div>
           
-            <section class="main__image">
-                <img src="Images/Picture Copy.png" alt="logo" width="320" height="176">
-            </section>
-          </section>
+            <div class="main__image">
+                <img src="Images/Picture Copy (1).jpg" alt="logo" width="320" height="176">
+            </div>
+          </article>
     </main>
 </body>
 </html
